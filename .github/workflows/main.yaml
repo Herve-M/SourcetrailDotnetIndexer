@@ -35,11 +35,11 @@ jobs:
 
       - name: Packing .Net artifact
         run: |
-          7zip SourcetrailDotnetIndexer-win-x64.zip .\dist-net\*
+          7z SourcetrailDotnetIndexer-win-x64.zip .\dist-net\*
 
       - name: Packing .Net Core artifact
         run: |
-          7zip SourcetrailDotnetCoreIndexer-win-x64.zip .\dist-netcore\*
+          7z SourcetrailDotnetCoreIndexer-win-x64.zip .\dist-netcore\*
 
       - name: Uploading artifacts
         uses: actions/upload-artifact@v2
