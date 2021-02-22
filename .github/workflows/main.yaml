@@ -19,9 +19,9 @@ jobs:
         uses: microsoft/setup-msbuild@v1.0.2
 
       - name: Setup .NET Core SDK
-        uses: actions/setup-dotnet@v1.6.0
+        uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: '5.x'
+          dotnet-version: '5.0.x'
 
       - name: Create Build Directory
         run: mkdir dist-net,dist-netcore
